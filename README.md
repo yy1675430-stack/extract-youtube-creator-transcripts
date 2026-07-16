@@ -31,19 +31,19 @@ Skill 本体遵循 [Agent Skills 开放标准](https://agentskills.io/specificat
 ### Claude Code
 
 ```powershell
-gh skill install yy1675430-stack/extract-youtube-creator-transcripts extract-youtube-creator-transcripts --agent claude-code --scope user
+gh skill install yanyi8171/extract-youtube-creator-transcripts extract-youtube-creator-transcripts --agent claude-code --scope user
 ```
 
 ### Codex
 
 ```powershell
-gh skill install yy1675430-stack/extract-youtube-creator-transcripts extract-youtube-creator-transcripts --agent codex --scope user
+gh skill install yanyi8171/extract-youtube-creator-transcripts extract-youtube-creator-transcripts --agent codex --scope user
 ```
 
 也可以在 Codex 中使用内置安装器：
 
 ```text
-$skill-installer install https://github.com/yy1675430-stack/extract-youtube-creator-transcripts/tree/main/skills/extract-youtube-creator-transcripts
+$skill-installer install https://github.com/yanyi8171/extract-youtube-creator-transcripts/tree/main/skills/extract-youtube-creator-transcripts
 ```
 
 安装后如果没有立即出现，请重启 Codex。
@@ -51,15 +51,15 @@ $skill-installer install https://github.com/yy1675430-stack/extract-youtube-crea
 ### Hermes Agent
 
 ```powershell
-hermes skills tap add yy1675430-stack/extract-youtube-creator-transcripts
-hermes skills install yy1675430-stack/extract-youtube-creator-transcripts/extract-youtube-creator-transcripts
+hermes skills tap add yanyi8171/extract-youtube-creator-transcripts
+hermes skills install yanyi8171/extract-youtube-creator-transcripts/extract-youtube-creator-transcripts
 ```
 
 安装前可以先运行 `hermes skills inspect`，安装后运行 `hermes skills audit`。
 
 ### Tencent WorkBuddy
 
-WorkBuddy 当前没有公开、稳定的命令行安装格式。请下载本仓库 Release 中的 `extract-youtube-creator-transcripts-v0.1.1.zip`，然后：
+WorkBuddy 当前没有公开、稳定的命令行安装格式。请下载本仓库 Release 中的 `extract-youtube-creator-transcripts-v0.1.2.zip`，然后：
 
 1. 打开“专家 技能·连接器”→“技能”。
 2. 点击“添加技能”→“上传技能”。
@@ -72,13 +72,13 @@ WorkBuddy v5.1.7 真机验证结果：ZIP 被正确识别，安全检测显示�
 ### 其他 Agent 客户端
 
 ```powershell
-npx skills add yy1675430-stack/extract-youtube-creator-transcripts --skill extract-youtube-creator-transcripts -g
+npx skills add yanyi8171/extract-youtube-creator-transcripts --skill extract-youtube-creator-transcripts -g
 ```
 
 或者使用 GitHub CLI，并把 `<client>` 换成 `gh skill install --help` 列出的客户端名称：
 
 ```powershell
-gh skill install yy1675430-stack/extract-youtube-creator-transcripts extract-youtube-creator-transcripts --agent <client> --scope user
+gh skill install yanyi8171/extract-youtube-creator-transcripts extract-youtube-creator-transcripts --agent <client> --scope user
 ```
 
 ## 使用

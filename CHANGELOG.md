@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.2 - 2026-07-16
+
+### Changed
+
+- Updated the GitHub owner and author from `yy1675430-stack` to `yanyi8171`.
+- Updated installation commands, repository links, release filename, and MIT copyright notice.
+
 ## 0.1.1 - 2026-07-16
 
 ### Changed
